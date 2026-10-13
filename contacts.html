@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — ООО «Мёд»</title>
+  <link rel="stylesheet" href="Style-css/Css.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo/Logo.jpg" alt="Логотип ООО «Мёд»" class="logo-icon">
+      <span>ООО «Мёд»<small>Пасека и продукты пчеловодства</small></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="orders.html">Заказы</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html" class="active">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a><span class="sep">/</span><span>Контакты</span>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Контакты</h1>
+      <p>Свяжитесь с нами удобным способом — мы ответим на вопросы о продукции, услугах и доставке.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-2">
+
+        <div>
+          <h2 class="section-title">Контактная информация</h2>
+
+          <ul class="contact-list" style="margin-top:20px;">
+            <li>
+              <div>
+                <strong>Адрес</strong>
+                г. Москва, ул. Лесная, д. 12, офис 3
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Телефон</strong>
+                <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:info@med-paseka.ru">info@med-paseka.ru</a>
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Режим работы</strong>
+                Офис: пн–пт с 9:00 до 18:00, сб–вс — выходной.<br>
+                В период медосбора (апрель–октябрь) пасека работает ежедневно.
+              </div>
+            </li>
+            <li>
+              <div>
+                <strong>Социальные сети</strong>
+                <div class="socials" style="margin-top:8px;">
+                  <a href="#" style="background:#fff4dd;color:var(--brown);" title="ВКонтакте">VK</a>
+                  <a href="#" style="background:#fff4dd;color:var(--brown);" title="Telegram">TG</a>
+                  <a href="#" style="background:#fff4dd;color:var(--brown);" title="WhatsApp">WA</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="form-card">
+          <h3 style="color:var(--brown);margin-bottom:18px;">Форма обратной связи</h3>
+          <form action="#" method="post">
+            <div class="field">
+              <label for="c-name">Ваше имя *</label>
+              <input type="text" id="c-name" name="name" required placeholder="Иванов Иван">
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="c-email">E-mail *</label>
+                <input type="email" id="c-email" name="email" required placeholder="mail@example.ru">
+              </div>
+              <div class="field">
+                <label for="c-phone">Телефон</label>
+                <input type="tel" id="c-phone" name="phone" placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="field">
+              <label for="c-theme">Тема обращения</label>
+              <select id="c-theme" name="theme">
+                <option>Вопрос о продукции</option>
+                <option>Заказ и доставка</option>
+                <option>Услуги пасеки</option>
+                <option>Оптовое сотрудничество</option>
+                <option>Другое</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="c-message">Сообщение *</label>
+              <textarea id="c-message" name="message" required placeholder="Напишите ваш вопрос"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Отправить сообщение</button>
+            <p class="hint" style="margin-top:12px;">* — обязательные поля</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fdf6e8;">
+    <div class="container">
+      <h2 class="section-title">Как нас найти</h2>
+      <p class="section-sub">Офис расположен в Москве, пасека — за городом, вблизи массивов медоносов.</p>
+
+      <div class="map">
+        
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=37.6,55.7&z=14" allowfullscreen></iframe>
+       
+        <div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>ООО «Мёд»</h4>
+        <p style="font-size:15px;">Разведение пчелосемей, производство и реализация экологически чистых продуктов пчеловодства.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="orders.html">Заказы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Клиентам</h4>
+        <ul class="footer-links">
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="orders.html">Услуги</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul class="footer-links">
+          <li>г. Москва, ул. Лесная, д. 12, офис 3</li>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:info@med-paseka.ru">info@med-paseka.ru</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «Мёд». Все права защищены.</span>
+      <div class="socials">
+        <a href="#" title="ВКонтакте">VK</a>
+        <a href="#" title="Telegram">TG</a>
+        <a href="#" title="WhatsApp">WA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

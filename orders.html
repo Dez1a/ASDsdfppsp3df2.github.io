@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Заказы — ООО «Мёд»</title>
+  <link rel="stylesheet" href="Style-css/Css.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <img src="images/logo/Logo.jpg" alt="Логотип ООО «Мёд»" class="logo-icon">
+      <span>ООО «Мёд»<small>Пасека и продукты пчеловодства</small></span>
+    </a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="about.html">О нас</a></li>
+        <li><a href="orders.html" class="active">Заказы</a></li>
+        <li><a href="reviews.html">Отзывы</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Главная</a><span class="sep">/</span><span>Заказы</span>
+  </div>
+</div>
+
+<main>
+
+  <section class="page-head">
+    <div class="container">
+      <h1>Заказы</h1>
+      <p>Каталог продукции и услуг, оформление заказа и запись на услуги пасеки.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Каталог продукции</h2>
+      <p class="section-sub">Мёд, воск, прополис и цветочная пыльца с собственной пасеки.</p>
+
+      <div class="grid grid-3">
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Lipovi-1.jpg" alt="Липовый мёд" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Липа</span>
+            <h3>Мёд липовый</h3>
+            <p>Светлый сорт. Жидкий или закристаллизовавшийся. 13–20 % воды, 75–80 % углеводов.</p>
+            <div class="price">700 ₽ / кг</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Grechnivi-2.jpg" alt="Гречишный мёд" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Гречиха</span>
+            <h3>Мёд гречишный</h3>
+            <p>Тёмный сорт с насыщенным вкусом. Богат микроэлементами и железом.</p>
+            <div class="price">650 ₽ / кг</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Med-sotah-3.jpg" alt="Мёд в сотах" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Соты</span>
+            <h3>Мёд в сотах</h3>
+            <p>Сотовый мёд — дороже центробежного, неудобен в транспортировке, требует потери воска.</p>
+            <div class="price">900 ₽ / 500 г</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Propolis-4.jpg" alt="Прополис" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Прополис</span>
+            <h3>Прополис</h3>
+            <p>Пчелиный клей. Более 50 органических компонентов, около 10 витаминов, 17 аминокислот.</p>
+            <div class="price">450 ₽ / 50 г</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Vosk-5.jpg" alt="Пчелиный воск" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Воск</span>
+            <h3>Пчелиный воск</h3>
+            <p>От белого до жёлто-бурого цвета, с медовым запахом. Около 50 химических соединений.</p>
+            <div class="price">1 200 ₽ / кг</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+        <article class="product">
+          <div class="product-img">
+            <img src="images/orders/Pilcza-6.jpg" alt="Цветочная пыльца" loading="lazy">
+          </div>
+          <div class="product-body">
+            <span class="badge">Пыльца</span>
+            <h3>Цветочная пыльца</h3>
+            <p>Белки, жиры, углеводы, минеральные соли, витамины и ферменты.</p>
+            <div class="price">550 ₽ / 250 г</div>
+            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#fdf6e8;">
+    <div class="container">
+      <h2 class="section-title">Услуги пасеки</h2>
+      <p class="section-sub">Запишитесь на услугу через форму — мы свяжемся с вами для подтверждения.</p>
+
+      <div class="grid grid-2">
+
+        <div class="grid" style="gap:18px;align-content:start;">
+          <div class="card">
+            <h3>Опыление садов и полей</h3>
+            <p>Кочевая пасека даёт больше мёда и обеспечивает качественное опыление сельскохозяйственных культур.</p>
+            <p class="price" style="margin-top:10px;">от 3 000 ₽ / га</p>
+          </div>
+
+          <div class="card">
+            <h3>Обучение пчеловодству</h3>
+            <p>Практический курс для начинающих: устройство улья, содержание семей, медосбор и зимовка.</p>
+            <p class="price" style="margin-top:10px;">5 000 ₽ / курс</p>
+          </div>
+
+          <div class="card">
+            <h3>Экскурсия на пасеку</h3>
+            <p>Выездная экскурсия с дегустацией продуктов пчеловодства и рассказом о жизни пчёл.</p>
+            <p class="price" style="margin-top:10px;">1 500 ₽ / человек</p>
+          </div>
+        </div>
+
+        <div class="form-card" id="service-form">
+          <h3 style="color:var(--brown);margin-bottom:18px;">Запись на услугу</h3>
+          <form action="#" method="post">
+            <div class="field">
+              <label for="s-name">Ваше имя *</label>
+              <input type="text" id="s-name" name="name" placeholder="Иванов Иван" required>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="s-phone">Телефон *</label>
+                <input type="tel" id="s-phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+              </div>
+              <div class="field">
+                <label for="s-email">E-mail</label>
+                <input type="email" id="s-email" name="email" placeholder="mail@example.ru">
+              </div>
+            </div>
+            <div class="field">
+              <label for="s-service">Услуга *</label>
+              <select id="s-service" name="service" required>
+                <option value="">— выберите услугу —</option>
+                <option>Опыление садов и полей</option>
+                <option>Обучение пчеловодству</option>
+                <option>Экскурсия на пасеку</option>
+                <option>Продажа пчелопакетов</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="field">
+                <label for="s-date">Желаемая дата</label>
+                <input type="date" id="s-date" name="date">
+              </div>
+              <div class="field">
+                <label for="s-count">Количество / объём</label>
+                <input type="text" id="s-count" name="count" placeholder="например, 2 га">
+              </div>
+            </div>
+            <div class="field">
+              <label for="s-comment">Комментарий</label>
+              <textarea id="s-comment" name="comment" placeholder="Дополнительные пожелания"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Записаться на услугу</button>
+            <p class="hint" style="margin-top:12px;">* — обязательные поля</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="order-form">
+    <div class="container">
+      <h2 class="section-title">Оформление заказа</h2>
+      <p class="section-sub">Проверьте состав корзины и заполните данные для доставки.</p>
+
+      <div class="grid grid-2">
+
+        <div class="form-card">
+          <h3 style="color:var(--brown);margin-bottom:12px;">Ваша корзина</h3>
+
+          <div class="cart-item">
+            <span>Мёд липовый, 1 кг</span>
+            <span>700 ₽</span>
+          </div>
+          <div class="cart-item">
+            <span>Цветочная пыльца, 250 г</span>
+            <span>550 ₽</span>
+          </div>
+          <div class="cart-item">
+            <span>Прополис, 50 г</span>
+            <span>450 ₽</span>
+          </div>
+
+          <div class="cart-total">
+            <span>Итого:</span>
+            <span>1 700 ₽</span>
+          </div>
+
+          <p class="hint" style="margin-top:16px;">
+            Оплата возможна при получении, банковской картой или через
+            интегрированные платёжные системы.
+          </p>
+        </div>
+
+        <div class="form-card">
+          <h3 style="color:var(--brown);margin-bottom:18px;">Данные заказчика</h3>
+          <form action="#" method="post">
+            <div class="form-row">
+              <div class="field">
+                <label for="o-name">Имя и фамилия *</label>
+                <input type="text" id="o-name" name="name" required placeholder="Иванов Иван">
+              </div>
+              <div class="field">
+                <label for="o-phone">Телефон *</label>
+                <input type="tel" id="o-phone" name="phone" required placeholder="+7 (___) ___-__-__">
+              </div>
+            </div>
+            <div class="field">
+              <label for="o-email">E-mail *</label>
+              <input type="email" id="o-email" name="email" required placeholder="mail@example.ru">
+            </div>
+            <div class="field">
+              <label for="o-address">Адрес доставки *</label>
+              <input type="text" id="o-address" name="address" required placeholder="город, улица, дом, квартира">
+            </div>
+            <div class="field">
+              <label for="o-pay">Способ оплаты</label>
+              <select id="o-pay" name="pay">
+                <option>Наличными при получении</option>
+                <option>Банковской картой курьеру</option>
+                <option>Онлайн-оплата</option>
+                <option>Безналичный расчёт (для опта)</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="o-comment">Комментарий к заказу</label>
+              <textarea id="o-comment" name="comment" placeholder="Удобное время доставки, пожелания"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Оформить заказ</button>
+            <p class="hint" style="margin-top:12px;">* — обязательные поля</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>ООО «Мёд»</h4>
+        <p style="font-size:15px;">Разведение пчелосемей, производство и реализация экологически чистых продуктов пчеловодства.</p>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="about.html">О нас</a></li>
+          <li><a href="orders.html">Заказы</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Клиентам</h4>
+        <ul class="footer-links">
+          <li><a href="reviews.html">Отзывы</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="orders.html">Услуги</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <ul class="footer-links">
+          <li>г. Москва, ул. Лесная, д. 12, офис 3</li>
+          <li><a href="tel:+74951234567">+7 (495) 123-45-67</a></li>
+          <li><a href="mailto:info@med-paseka.ru">info@med-paseka.ru</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ООО «Мёд». Все права защищены.</span>
+      <div class="socials">
+        <a href="#" title="ВКонтакте">VK</a>
+        <a href="#" title="Telegram">TG</a>
+        <a href="#" title="WhatsApp">WA</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
