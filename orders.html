@@ -48,7 +48,7 @@
 
       <div class="grid grid-3">
 
-        <article class="product">
+        <article class="product" data-id="lipa" data-name="Мёд липовый" data-price="700" data-unit="1 кг">
           <div class="product-img">
             <img src="images/orders/Lipovi-1.jpg" alt="Липовый мёд" loading="lazy">
           </div>
@@ -57,11 +57,11 @@
             <h3>Мёд липовый</h3>
             <p>Светлый сорт. Жидкий или закристаллизовавшийся. 13–20 % воды, 75–80 % углеводов.</p>
             <div class="price">700 ₽ / кг</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
-        <article class="product">
+        <article class="product" data-id="grechiha" data-name="Мёд гречишный" data-price="650" data-unit="1 кг">
           <div class="product-img">
             <img src="images/orders/Grechnivi-2.jpg" alt="Гречишный мёд" loading="lazy">
           </div>
@@ -70,11 +70,11 @@
             <h3>Мёд гречишный</h3>
             <p>Тёмный сорт с насыщенным вкусом. Богат микроэлементами и железом.</p>
             <div class="price">650 ₽ / кг</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
-        <article class="product">
+        <article class="product" data-id="soty" data-name="Мёд в сотах" data-price="900" data-unit="500 г">
           <div class="product-img">
             <img src="images/orders/Med-sotah-3.jpg" alt="Мёд в сотах" loading="lazy">
           </div>
@@ -83,11 +83,11 @@
             <h3>Мёд в сотах</h3>
             <p>Сотовый мёд — дороже центробежного, неудобен в транспортировке, требует потери воска.</p>
             <div class="price">900 ₽ / 500 г</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
-        <article class="product">
+        <article class="product" data-id="propolis" data-name="Прополис" data-price="450" data-unit="50 г">
           <div class="product-img">
             <img src="images/orders/Propolis-4.jpg" alt="Прополис" loading="lazy">
           </div>
@@ -96,11 +96,11 @@
             <h3>Прополис</h3>
             <p>Пчелиный клей. Более 50 органических компонентов, около 10 витаминов, 17 аминокислот.</p>
             <div class="price">450 ₽ / 50 г</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
-        <article class="product">
+        <article class="product" data-id="vosk" data-name="Пчелиный воск" data-price="1200" data-unit="1 кг">
           <div class="product-img">
             <img src="images/orders/Vosk-5.jpg" alt="Пчелиный воск" loading="lazy">
           </div>
@@ -109,11 +109,11 @@
             <h3>Пчелиный воск</h3>
             <p>От белого до жёлто-бурого цвета, с медовым запахом. Около 50 химических соединений.</p>
             <div class="price">1 200 ₽ / кг</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
-        <article class="product">
+        <article class="product" data-id="pylca" data-name="Цветочная пыльца" data-price="550" data-unit="250 г">
           <div class="product-img">
             <img src="images/orders/Pilcza-6.jpg" alt="Цветочная пыльца" loading="lazy">
           </div>
@@ -122,7 +122,7 @@
             <h3>Цветочная пыльца</h3>
             <p>Белки, жиры, углеводы, минеральные соли, витамины и ферменты.</p>
             <div class="price">550 ₽ / 250 г</div>
-            <a href="#order-form" class="btn btn-green btn-block">В корзину</a>
+            <button type="button" class="btn btn-green btn-block add-to-cart">В корзину</button>
           </div>
         </article>
 
@@ -217,23 +217,18 @@
         <div class="form-card">
           <h3 style="color:var(--brown);margin-bottom:12px;">Ваша корзина</h3>
 
-          <div class="cart-item">
-            <span>Мёд липовый, 1 кг</span>
-            <span>700 ₽</span>
-          </div>
-          <div class="cart-item">
-            <span>Цветочная пыльца, 250 г</span>
-            <span>550 ₽</span>
-          </div>
-          <div class="cart-item">
-            <span>Прополис, 50 г</span>
-            <span>450 ₽</span>
-          </div>
+          <div id="cart-items"></div>
 
           <div class="cart-total">
             <span>Итого:</span>
-            <span>1 700 ₽</span>
+            <span id="cart-total">0 ₽</span>
           </div>
+
+          <button type="button" id="clear-cart"
+                  class="btn btn-block"
+                  style="margin-top:14px;background:#eee;color:#555;">
+            Очистить корзину
+          </button>
 
           <p class="hint" style="margin-top:16px;">
             Оплата возможна при получении, банковской картой или через
@@ -243,7 +238,7 @@
 
         <div class="form-card">
           <h3 style="color:var(--brown);margin-bottom:18px;">Данные заказчика</h3>
-          <form action="#" method="post">
+          <form action="#" method="post" id="checkout-form">
             <div class="form-row">
               <div class="field">
                 <label for="o-name">Имя и фамилия *</label>
@@ -329,5 +324,6 @@
   </div>
 </footer>
 
+<script src="js/cart.js" defer></script>
 </body>
 </html>
