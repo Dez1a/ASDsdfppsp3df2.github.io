@@ -1,4 +1,4 @@
-/* ================= ПЕРЕМЕННЫЕ И БАЗА ================= */
+/*Переменные цветов*/
 :root{
   --honey:#e6a817;
   --honey-light:#ffd97a;
@@ -28,7 +28,7 @@ img{max-width:100%;display:block;}
 a{color:inherit;text-decoration:none;}
 .container{max-width:1140px;margin:0 auto;padding:0 20px;}
 
-/* ================= ШАПКА И НАВИГАЦИЯ ================= */
+/*Шапка*/
 .site-header{
   background:#fff;
   border-bottom:3px solid var(--honey);
@@ -57,7 +57,7 @@ a{color:inherit;text-decoration:none;}
 .main-nav a:hover{background:#fff4dd;color:var(--honey-dark);}
 .main-nav a.active{background:var(--honey);color:#fff;}
 
-/* ================= КНОПКИ ================= */
+/*Батаны*/
 .btn{
   display:inline-block;padding:14px 28px;border-radius:10px;
   font-weight:700;font-size:16px;border:2px solid transparent;
@@ -73,7 +73,7 @@ a{color:inherit;text-decoration:none;}
 .btn-light:hover{background:#fff4dd;transform:translateY(-2px);}
 .btn-block{display:block;width:100%;}
 
-/* ================= ГЛАВНЫЙ БАННЕР ================= */
+/*Банер*/
 .hero{
   background:linear-gradient(135deg,#fff6e0 0%,#fdf0cf 45%,#eef3dd 100%);
   padding:70px 0;overflow:hidden;
@@ -96,15 +96,11 @@ a{color:inherit;text-decoration:none;}
   object-fit: cover;
   display: block;
 }
-
-/* ================= СЕКЦИИ ================= */
 .section{padding:60px 0;}
 .section-title{font-size:30px;color:var(--brown);margin-bottom:10px;}
 .section-sub{color:var(--muted);margin-bottom:36px;max-width:720px;}
 .text-center{text-align:center;}
 .text-center .section-sub{margin-left:auto;margin-right:auto;}
-
-/* ================= ХЛЕБНЫЕ КРОШКИ ================= */
 .breadcrumbs{
   background:#f7efdd;border-bottom:1px solid var(--border);
   padding:12px 0;font-size:14px;color:var(--muted);
@@ -113,7 +109,7 @@ a{color:inherit;text-decoration:none;}
 .breadcrumbs a:hover{text-decoration:underline;}
 .breadcrumbs .sep{margin:0 8px;color:#c3b49a;}
 
-/* ================= ЗАГОЛОВОК ВНУТРЕННЕЙ СТРАНИЦЫ ================= */
+/*Заголовки*/
 .page-head{
   background:linear-gradient(135deg,#fff6e0,#eef3dd);
   padding:46px 0;border-bottom:1px solid var(--border);
@@ -121,13 +117,12 @@ a{color:inherit;text-decoration:none;}
 .page-head h1{font-size:34px;color:var(--brown);margin-bottom:8px;}
 .page-head p{color:#5c4b38;max-width:780px;}
 
-/* ================= СЕТКИ ================= */
 .grid{display:grid;gap:24px;}
 .grid-4{grid-template-columns:repeat(4,1fr);}
 .grid-3{grid-template-columns:repeat(3,1fr);}
 .grid-2{grid-template-columns:repeat(2,1fr);}
 
-/* ================= КАРТОЧКИ ================= */
+/*Карточки-товары*/
 .card{
   background:#fff;border:1px solid var(--border);border-radius:var(--radius);
   padding:26px;box-shadow:var(--shadow);transition:.25s;
@@ -137,7 +132,7 @@ a{color:inherit;text-decoration:none;}
 .card h3{color:var(--brown);font-size:19px;margin-bottom:8px;}
 .card p{color:var(--muted);font-size:15px;}
 
-/* Иконка-картинка в карточке преимущества/сертификата */
+/*Иконки*/
 .feature-icon {
   width: 200px;
   height: 100px;
@@ -175,16 +170,14 @@ a{color:inherit;text-decoration:none;}
   object-fit: cover;
   display: block;
 }
-/* Центрированный вариант иконки (в карточках «Сертификаты») */
 .card.text-center .feature-icon {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* Карточка без иконки — заголовок сверху, аккуратные отступы */
 .card > h3:first-child { margin-top: 0; }
 
-/* ================= КАРТОЧКА ТОВАРА ================= */
+/*Карточка в заказах*/
 .product{
   background:#fff;border:1px solid var(--border);border-radius:var(--radius);
   overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column;transition:.25s;
@@ -213,7 +206,7 @@ a{color:inherit;text-decoration:none;}
   text-transform:uppercase;letter-spacing:.4px;align-self:flex-start;
 }
 
-/* ================= ФОРМЫ ================= */
+/*Формы заполнения*/
 .form-card{
   background:#fff;border:1px solid var(--border);border-radius:var(--radius);
   padding:28px;box-shadow:var(--shadow);
@@ -232,13 +225,9 @@ a{color:inherit;text-decoration:none;}
 }
 .field textarea{resize:vertical;min-height:120px;}
 .hint{font-size:13px;color:var(--muted);}
-
-/* ================= СПИСКИ ================= */
 .list-check{list-style:none;display:flex;flex-direction:column;gap:10px;}
 .list-check li{position:relative;padding-left:30px;color:#5c4b38;}
 .list-check li::before{content:"✔";position:absolute;left:0;top:0;color:var(--green);font-weight:700;}
-
-/* ================= КОРЗИНА ================= */
 .cart-item{
   display:flex;justify-content:space-between;align-items:center;gap:12px;
   padding:12px 0;border-bottom:1px dashed var(--border);font-size:15px;
@@ -248,7 +237,7 @@ a{color:inherit;text-decoration:none;}
   color:var(--brown);padding-top:14px;
 }
 
-/* ================= ОТЗЫВЫ ================= */
+/*Оформления отзывов*/
 .review{
   background:#fff;border:1px solid var(--border);border-radius:var(--radius);
   padding:24px;box-shadow:var(--shadow);
@@ -278,7 +267,7 @@ a{color:inherit;text-decoration:none;}
 .stars{color:var(--honey);font-size:18px;letter-spacing:2px;margin-bottom:10px;}
 .review p{color:#5c4b38;font-size:15px;}
 
-/* ================= КОНТАКТЫ ================= */
+/*Контакты*/
 .contact-list{list-style:none;display:flex;flex-direction:column;gap:18px;}
 .contact-list li{display:flex;gap:14px;align-items:flex-start;}
 .contact-ico {
@@ -308,8 +297,6 @@ a{color:inherit;text-decoration:none;}
   background:repeating-linear-gradient(45deg,#f2ead8,#f2ead8 12px,#ece2cc 12px,#ece2cc 24px);
 }
 .map iframe{width:105%;height:450px;border:0;border-radius:var(--radius);}
-
-/* ================= CTA-БЛОК ================= */
 .cta{
   background:linear-gradient(135deg,var(--green),var(--green-dark));
   color:#fff;border-radius:var(--radius);padding:40px;
@@ -319,7 +306,7 @@ a{color:inherit;text-decoration:none;}
 .cta h2{font-size:26px;margin-bottom:6px;}
 .cta p{color:#dfeccf;}
 
-/* ================= ПОДВАЛ ================= */
+/*Footer*/
 .site-footer{background:var(--brown);color:#f2e7d5;margin-top:60px;padding:48px 0 0;}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;}
 .site-footer h4{color:#fff;font-size:16px;margin-bottom:14px;}
@@ -337,8 +324,6 @@ a{color:inherit;text-decoration:none;}
   display:grid;place-items:center;font-size:16px;transition:.25s;
 }
 .socials a:hover{background:var(--honey);}
-
-/* ================= АДАПТИВНОСТЬ ================= */
 @media (max-width:980px){
   .hero-inner{grid-template-columns:1fr;}
   .hero-art{height:220px;}
